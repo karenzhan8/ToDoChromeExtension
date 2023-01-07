@@ -10,4 +10,4 @@ Displays a to-do tasklist and an inspirational quote everytime a new tab is open
 * Enable "Developer mode" on the top right corner
 * Click "Load unpacked" on the top left
 * Select root folder of the project 
-* Open a new tab & enjoy
+* Open a new tab 
