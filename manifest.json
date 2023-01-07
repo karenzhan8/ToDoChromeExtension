@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "New Tab To-Do",
+  "version": "1.0",
+  "description": "Displays your to-do tasklist, upcoming Google Calendar Events, and an inspirational quote everytime you are opening a new tab in Google Chrome",
+  "author": "Karen Zhan",
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "128": "icon.png"
+  }
+}

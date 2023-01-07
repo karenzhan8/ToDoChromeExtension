@@ -1,0 +1,156 @@
+body {
+    background-image: url("background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Greeting message and quote stylization */
+.intro {
+    width: 35%;
+    height: auto;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 10px;
+}
+
+.message {
+    padding-left: 35px;
+    color: #597B88;
+}
+
+.message h1 {
+    font-family: 'Hello Bosnia Script', sans-serif;
+    font-size: 7em;
+    margin-bottom: 5px;
+}
+
+#quote {
+    font-size: 2em;
+    padding-bottom: 35px;
+}
+
+/* To-Do Button */
+.to-do-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 0px 9px 0px 9px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.to-do-button:hover {
+    cursor: pointer;
+}
+
+.to-do-button img {
+    width: 30px;
+    padding: 10px 3px 10px 3px;
+}
+
+/* To-Do List */
+.to-do-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    color: #597B88;
+    opacity: 75%;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+
+.to-do-list h1 {
+    font-size: 4em;
+    font-family: 'Hello Bosnia Script', sans-serif;
+}
+
+.to-do-list .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 0px 0px 15px;
+}
+
+.to-do-list .close:hover {
+    cursor: pointer;
+}
+
+.to-do-list h1 {
+    padding-top: 7%;
+}
+
+.to-do-container {
+    background: #fff;
+    display: table;
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+  }
+  
+.to-do-container input {
+    border: none;
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+    padding: 8px 0 8px 10px;
+    border-bottom: 1px solid #cfcbcc;
+    outline: 0;
+}
+
+.to-do-container ul {
+    list-style: none;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.to-do-container ul li:before {
+    content: "\25A1";
+    padding: 10px 10px;
+    font-size: 20px;
+}
+.to-do-container ul li:hover {
+    cursor: pointer;
+}
+.to-do-container ul li:last-child {
+    border-bottom: none;
+}
+
+.to-do-container ul li {
+    font-weight: 400;
+    border-bottom: 1px solid #cfcbcc;
+    line-height: 1.5;
+    padding: 8px 0;
+} 
+.to-do-container .checked:before {
+    content: "\2713";
+    padding: 10px 10px;
+    font-size: 20px;
+}
+.to-do-container .checked:hover {
+    text-decoration: none;
+}
+.to-do-container .checked:after {
+    content: " (click to remove)";
+    color:#597B88;
+    text-align: right;
+}
